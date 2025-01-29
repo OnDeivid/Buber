@@ -1,8 +1,8 @@
 import { SafeAreaView, StyleSheet, View, Text } from "react-native";
 
-export default function Card({ name, car, availability }) {
+export default function Card({ name, car, availability, componentsTheme }) {
     return (
-        <View style={styles.container}>
+        <View style={[styles.container, { backgroundColor: componentsTheme }]}>
             <View style={styles.header}>
             </View>
             <View style={styles.infoHolder}>
@@ -27,19 +27,19 @@ const styles = StyleSheet.create({
     container: {
         margin: 20,
         width: '45%',
-        height:'80%',
-        marginHorizontal:10,
+        height: '80%',
+        marginHorizontal: 10,
         marginVertical: 20,
         paddingVertical: 10,
         borderRadius: 10,
         alignItems: 'center',
-        backgroundColor: 'blue'
+        backgroundColor: 'blue',
 
     },
     header: {
         width: '100%',
         height: 130,
-        marginTop:-10,
+        marginTop: -10,
         backgroundColor: '#F5F5DC',
         borderTopLeftRadius: 10,
         borderTopRightRadius: 10,
@@ -67,8 +67,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop:10,
-        paddingBottom:8
+        marginTop: 10,
+        paddingBottom: 15
 
     },
     statusCircle: {
@@ -76,12 +76,13 @@ const styles = StyleSheet.create({
         height: 13,
         width: 13,
         borderRadius: 7,
-        marginTop:-10
+        marginTop: -10
     },
     availabilityText: {
         marginLeft: 7,
         color: 'white',
         fontSize: 16,
-        marginTop:-10
+        marginTop: -10,
+
     },
 });

@@ -8,6 +8,10 @@ import googleD from './assets/login/dark/Google.png'
 import appleD from './assets/login/dark/apple.png'
 import backD from './assets/login/dark/Back.png'
 
+import toggle from './assets/home/Menu.png'
+import search from './assets/home/Search.png'
+import someicon from './assets/home/Group.png'
+
 
 const providersLogoPath = {
     dark: {
@@ -23,18 +27,24 @@ const providersLogoPath = {
         back: backD
     }
 }
+const homeSearchImages = {
+    toggle: toggle,
+    search: search,
+    someicon: someicon
+}
+
 const backgroundcolorProvider = {
-    dark: "#2F2F2F",
-    light: "#DFEDFB"
+    light: "#DFEDFB",
+    dark: "#2F2F2F"
 }
 const textColorProvider = {
     light: "#2F2F2F",
     dark: "#DFEDFB"
 }
 const elementsColorProvider = {
-    dark: "#4378AF",
-    light: "#25598E"
+    light: "#25598E",
+    dark: "#4378AF"
 }
 
 
-export const themeData = { backgroundcolorProvider, providersLogoPath, textColorProvider, elementsColorProvider };
+export const themeData = { backgroundcolorProvider, providersLogoPath, textColorProvider, elementsColorProvider, homeSearchImages };
